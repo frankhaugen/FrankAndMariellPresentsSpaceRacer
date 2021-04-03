@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\repos\frankhaugen\FrankAndMariellPresentsSpaceRacer\Unity3D\FrankAndMariellPresentsSpaceRacer" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Code" t="Include">
+          <e p="CameraFollow.cs" t="Include" />
+          <e p="Craft.cs" t="Include" />
+          <e p="Deprecated" t="Include">
+            <e p="DirectionalThrust.cs" t="Include" />
+            <e p="ExperimentalThrusterAssembly.cs" t="Include" />
+            <e p="MassConfiguration.cs" t="Include" />
+            <e p="OldThruster.cs" t="Include" />
+            <e p="ShipConfiguration.cs" t="Include" />
+            <e p="ThrusterConfiguration.cs" t="Include" />
+            <e p="Thrusters.cs" t="Include" />
+          </e>
+          <e p="Enums" t="Include">
+            <e p="Direction.cs" t="Include" />
+          </e>
+          <e p="Libraries" t="Include">
+            <e p="Dynagon" t="Include">
+              <e p="Background.cs" t="Include" />
+              <e p="Containers.cs" t="Include" />
+              <e p="Factory.cs" t="Include" />
+              <e p="Functions.cs" t="Include" />
+              <e p="Illumination.cs" t="Include" />
+              <e p="Meteor.cs" t="Include" />
+              <e p="Meteors.cs" t="Include" />
+              <e p="Orbit.cs" t="Include" />
+              <e p="Polygon.cs" t="Include" />
+              <e p="Polygon2D.cs" t="Include" />
+              <e p="Polygon3D.cs" t="Include" />
+              <e p="Polyhedrons.cs" t="Include" />
+              <e p="Primitives.cs" t="Include" />
+              <e p="Triangulator2D.cs" t="Include" />
+              <e p="Triangulator3D.cs" t="Include" />
+            </e>
+          </e>
+          <e p="LifetimeLimiter.cs" t="Include" />
+          <e p="MapGenerator.cs" t="Include" />
+          <e p="NamedArrayAttribute.cs" t="Include" />
+          <e p="ReadOnlyDrawer.cs" t="Include" />
+          <e p="Thruster.cs" t="Include" />
+          <e p="ThrusterBehavior.cs" t="Include" />
+          <e p="Turret.cs" t="Include" />
+        </e>
+      </e>
+      <e p="FrankAndMariellPresentsSpaceRacer.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
+    </e>
+    <e p="C:\Users\frank\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\frank\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_FrankAndMariellPresentsSpaceRacer.1526940078.00" t="ExcludeRecursive" />
+  </component>
+</project>

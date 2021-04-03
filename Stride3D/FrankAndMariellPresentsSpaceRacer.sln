@@ -1,0 +1,31 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.0.0
+MinimumVisualStudioVersion = 16.0.0.0
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrankAndMariellPresentsSpaceRacer.Windows", "FrankAndMariellPresentsSpaceRacer.Windows\FrankAndMariellPresentsSpaceRacer.Windows.csproj", "{9AB0DD0B-9360-4AAE-BF79-7CA4E49CF166}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrankAndMariellPresentsSpaceRacer", "FrankAndMariellPresentsSpaceRacer\FrankAndMariellPresentsSpaceRacer.csproj", "{055C28AB-8DFF-4B22-831D-BC762D0663E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9AB0DD0B-9360-4AAE-BF79-7CA4E49CF166}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AB0DD0B-9360-4AAE-BF79-7CA4E49CF166}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AB0DD0B-9360-4AAE-BF79-7CA4E49CF166}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AB0DD0B-9360-4AAE-BF79-7CA4E49CF166}.Release|Any CPU.Build.0 = Release|Any CPU
+		{055C28AB-8DFF-4B22-831D-BC762D0663E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{055C28AB-8DFF-4B22-831D-BC762D0663E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{055C28AB-8DFF-4B22-831D-BC762D0663E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{055C28AB-8DFF-4B22-831D-BC762D0663E6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FF1B203F-D3CB-45F5-AA6A-DFEF5439B145}
+	EndGlobalSection
+EndGlobal
