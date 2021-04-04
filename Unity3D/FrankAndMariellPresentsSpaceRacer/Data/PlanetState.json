@@ -1,0 +1,22 @@
+{
+    "Entities": [
+        {
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        }
+    ]
+}

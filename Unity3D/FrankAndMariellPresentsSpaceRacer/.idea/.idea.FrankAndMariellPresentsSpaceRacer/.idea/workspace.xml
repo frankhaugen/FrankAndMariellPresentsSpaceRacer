@@ -1,5 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fdf26739-9294-413b-b020-49ddda29843e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Code/IO.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/IO/Json.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/IO/Json/JsonConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/IO/Json/JsonConfiguration.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/IO/Json/JsonContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/IO/Json/JsonContext.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/IO/Json/JsonEntity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/IO/Json/JsonEntity.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/IO/Json/JsonExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/IO/Json/JsonExtensions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Legacy.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Legacy/LaserScript.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Legacy/LaserScript.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Legacy/Movement.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Legacy/Movement.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Legacy/XwingMove.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Legacy/XwingMove.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Models.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Models/World.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Models/World/PlanetState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Models/World/PlanetState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/PolarCoordinates.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/PolarCoordinates.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/WorldGeneration.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/WorldGeneration/CoordinateGeneration.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data/PlanetState.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FrankAndMariellPresentsSpaceRacer/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FrankAndMariellPresentsSpaceRacer/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FrankAndMariellPresentsSpaceRacer/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FrankAndMariellPresentsSpaceRacer/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FrankAndMariellPresentsSpaceRacer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FrankAndMariellPresentsSpaceRacer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Deprecated/DirectionalThrust.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Deprecated/DirectionalThrust.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Deprecated/OldThruster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Deprecated/OldThruster.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Deprecated/ShipConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Deprecated/ShipConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Deprecated/ThrusterConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Deprecated/ThrusterConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Enums/Direction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Enums/Direction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/MapGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/MapGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Thruster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Thruster.cs" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Code/IO/Json/JsonContext.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Assets/Code/IO/Json/IJsonContext.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/IO/Json/JsonExtensions.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Models/World/PlanetState.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/IO/Json/TestTest.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/IO/Json/JsonEntity.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/IO/Json/JsonContext.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/MapGenerator.cs" />
+    </changedPaths>
+  </component>
+  <component name="ProjectId" id="1qfPFN1Z9q6pThOuBhlTAxPYyNt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
@@ -19,5 +97,66 @@
       </option>
       <method v="2" />
     </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fdf26739-9294-413b-b020-49ddda29843e" name="Default Changelist" comment="" />
+      <created>1617467572333</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617467572333</updated>
+      <workItem from="1617467588025" duration="5286000" />
+    </task>
+    <servers />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Code/IO/Json/JsonContext.cs</url>
+          <line>81</line>
+          <properties documentPath="C:\repos\frankhaugen\FrankAndMariellPresentsSpaceRacer\Unity3D\FrankAndMariellPresentsSpaceRacer\Assets\Code\IO\Json\JsonContext.cs" initialLine="68" containingFunctionPresentation="method 'GetById'">
+            <startOffsets>
+              <option value="2495" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2511" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Code/IO/Json/JsonContext.cs</url>
+          <line>108</line>
+          <properties documentPath="C:\repos\frankhaugen\FrankAndMariellPresentsSpaceRacer\Unity3D\FrankAndMariellPresentsSpaceRacer\Assets\Code\IO\Json\JsonContext.cs" initialLine="86" containingFunctionPresentation="method 'Add'">
+            <startOffsets>
+              <option value="3258" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3259" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

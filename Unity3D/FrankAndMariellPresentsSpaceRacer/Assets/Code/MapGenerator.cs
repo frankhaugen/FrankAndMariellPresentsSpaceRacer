@@ -1,5 +1,7 @@
 using System;
+using Code.IO.Json;
 using Code.Libraries.Dynagon;
+using Code.Models.World;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -7,12 +9,36 @@ namespace Code
 {
     public class MapGenerator : MonoBehaviour
     {
+        [SerializeField] public PlanetState PlanetState;
+
+        private JsonContext<PlanetState> _context;
+        
         // Start is called before the first frame update
         private void Start()
         {
-        
+            _context = new JsonContext<PlanetState>();
+
+            PlanetState = new PlanetState();
+            PlanetState.Id = Guid.NewGuid();
+            PlanetState.Name = "Perle";
+            PlanetState.Position = new Vector3(40f, 0f, 40f);
+            PlanetState.Radius = 20f;
+            
+            _context.Add(PlanetState);
+            // _context.SaveChanges();
+            Debug.Log(_context.GetFilepath());
+
+            GeneratePlanet();
         }
 
+        private void GeneratePlanet()
+        {
+            var planet = _context.GetById(PlanetState.Id);
+            var planetGameObject = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+            planetGameObject.transform.position = planet.Position;
+            planetGameObject.transform.localScale = new Vector3(planet.Radius, planet.Radius, planet.Radius);
+        }
+        
         private void GenerateSpheres()
         {
             for (var i = 0; i < 100; i++)
@@ -98,24 +124,5 @@ namespace Code
             result.z = polarCoordinates.Radius * Mathf.Cos(polarCoordinates.Inclination);
             return result;
         }
-    }
-
-    [Serializable]
-    public class PolarCoordinates
-    {
-        /// <summary>
-        /// Azimuth
-        /// </summary>
-        [SerializeField] public float Azimuth;
-    
-        /// <summary>
-        /// Inclination
-        /// </summary>
-        [SerializeField] public float Inclination;
-
-        /// <summary>
-        /// Distance
-        /// </summary>
-        [SerializeField] public float Radius;
     }
 }

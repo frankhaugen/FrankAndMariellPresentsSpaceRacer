@@ -1,7 +1,8 @@
 using System;
+using Code.Enums;
 using UnityEngine;
 
-namespace Code
+namespace Code.Deprecated
 {
     public class DirectionalThrust : MonoBehaviour
     {

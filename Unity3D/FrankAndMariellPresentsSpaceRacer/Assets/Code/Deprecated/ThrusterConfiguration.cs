@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Code
+namespace Code.Deprecated
 {
     [Serializable]
     public class ThrusterConfiguration

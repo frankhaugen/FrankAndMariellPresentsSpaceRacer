@@ -1,4 +1,4 @@
-﻿namespace Code
+﻿namespace Code.Enums
 {
     public enum Direction
     {

@@ -19,6 +19,19 @@
           <e p="Enums" t="Include">
             <e p="Direction.cs" t="Include" />
           </e>
+          <e p="IO" t="Include">
+            <e p="Json" t="Include">
+              <e p="JsonConfiguration.cs" t="Include" />
+              <e p="JsonContext.cs" t="Include" />
+              <e p="JsonEntity.cs" t="Include" />
+              <e p="JsonExtensions.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Legacy" t="Include">
+            <e p="LaserScript.cs" t="Include" />
+            <e p="Movement.cs" t="Include" />
+            <e p="XwingMove.cs" t="Include" />
+          </e>
           <e p="Libraries" t="Include">
             <e p="Dynagon" t="Include">
               <e p="Background.cs" t="Include" />
@@ -40,7 +53,13 @@
           </e>
           <e p="LifetimeLimiter.cs" t="Include" />
           <e p="MapGenerator.cs" t="Include" />
+          <e p="Models" t="Include">
+            <e p="World" t="Include">
+              <e p="PlanetState.cs" t="Include" />
+            </e>
+          </e>
           <e p="NamedArrayAttribute.cs" t="Include" />
+          <e p="PolarCoordinates.cs" t="Include" />
           <e p="ReadOnlyDrawer.cs" t="Include" />
           <e p="Thruster.cs" t="Include" />
           <e p="ThrusterBehavior.cs" t="Include" />
