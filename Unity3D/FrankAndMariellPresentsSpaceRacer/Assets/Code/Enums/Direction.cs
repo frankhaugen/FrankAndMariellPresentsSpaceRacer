@@ -7,6 +7,8 @@
         Left,
         Right,
         Up,
-        Down
+        Down,
+        RollLeft,
+        RollRight
     }
 }

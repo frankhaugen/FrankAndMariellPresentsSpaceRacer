@@ -36,10 +36,6 @@ namespace Code
         
         private void FixedUpdate()
         {
-            // calculateForces(1f);
-
-            // Debug.Log($"{Gamepad.shortDisplayName}");
-
             try
             {
                 HandleInput();
@@ -49,49 +45,29 @@ namespace Code
                 Debug.LogError(e);;
             }
             
-            // if (!Input.anyKey) return;
-            // Thrusters.Where(x => Input.GetKey(x.KeyCode)).ToList().ForEach(x => x.Execute(_rigidbody));
-            
-            // if (Input.anyKey)
-            // {
-            //     if (Input.GetKey(KeyCode.W)) { _rigidbody.AddForce(transform.forward); }
-            //     if (Input.GetKey(KeyCode.S)) { _rigidbody.AddForce(transform.forward * -1); }
-            //     if (Input.GetKey(KeyCode.A)) { transform.Rotate(Vector3.up * (_turnSpeedMultiplyer * Time.deltaTime * -1)); }
-            //     if (Input.GetKey(KeyCode.D)) { transform.Rotate(Vector3.up * (_turnSpeedMultiplyer * Time.deltaTime)); }
-            // }
+            Thrusters.Where(x => InputSystem.GetDevice<Keyboard>().allKeys.FirstOrDefault(y => y.keyCode == x.KeyCode).IsPressed()).ToList().ForEach(x => x.Execute(_rigidbody));
         }
 
         private void HandleInput()
         {
-            var leftStick = InputSystem.GetDevice<Gamepad>().leftStick.ReadValue();
-            var rightStick = InputSystem.GetDevice<Gamepad>().rightStick.ReadValue();
-            var deadzone = 0.15f;
-            
-            if (leftStick.y > deadzone) Thrusters.Where(x => x.Direction == Direction.Forward && x.ThrusterBehavior == ThrusterBehavior.AddForce).ToList().ForEach(x => x.Execute(_rigidbody, leftStick.y));
-            if (leftStick.y < -deadzone) Thrusters.Where(x => x.Direction == Direction.Backward && x.ThrusterBehavior == ThrusterBehavior.AddForce).ToList().ForEach(x => x.Execute(_rigidbody, leftStick.y));
-            
-            if (leftStick.x > deadzone) Thrusters.Where(x => x.Direction == Direction.Left && x.ThrusterBehavior == ThrusterBehavior.AddForce).ToList().ForEach(x => x.Execute(_rigidbody, leftStick.x));
-            if (leftStick.x < -deadzone) Thrusters.Where(x => x.Direction == Direction.Right && x.ThrusterBehavior == ThrusterBehavior.AddForce).ToList().ForEach(x => x.Execute(_rigidbody, leftStick.x));
-            
-
-            if (rightStick.x > deadzone) Thrusters.Where(x => x.Direction == Direction.Up && x.ThrusterBehavior == ThrusterBehavior.AddTorque).ToList().ForEach(x => x.Execute(_rigidbody, rightStick.x));
-            if (rightStick.x < -deadzone) Thrusters.Where(x => x.Direction == Direction.Down && x.ThrusterBehavior == ThrusterBehavior.AddTorque).ToList().ForEach(x => x.Execute(_rigidbody, rightStick.x));
-            
-            if (rightStick.y > deadzone) Thrusters.Where(x => x.Direction == Direction.Left && x.ThrusterBehavior == ThrusterBehavior.AddTorque).ToList().ForEach(x => x.Execute(_rigidbody, rightStick.y));
-            if (rightStick.y < -deadzone) Thrusters.Where(x => x.Direction == Direction.Right && x.ThrusterBehavior == ThrusterBehavior.AddTorque).ToList().ForEach(x => x.Execute(_rigidbody, rightStick.y));
-            
-            Debug.Log($"LeftStick: {leftStick} RightStick: {rightStick}");
+            ApplyGamepadAxis();
         }
 
-        private void Test2()
+        private void ApplyGamepadAxis()
         {
+            // Okay (translate left-right)
             Test(InputSystem.GetDevice<Gamepad>().leftStick.left.ReadValue(), Direction.Left, ThrusterBehavior.AddForce);
             Test(InputSystem.GetDevice<Gamepad>().leftStick.right.ReadValue(), Direction.Right, ThrusterBehavior.AddForce);
+            
+            // Okay (translate forward-backward)
             Test(InputSystem.GetDevice<Gamepad>().leftStick.up.ReadValue(), Direction.Forward, ThrusterBehavior.AddForce);
             Test(InputSystem.GetDevice<Gamepad>().leftStick.down.ReadValue(), Direction.Forward, ThrusterBehavior.AddForce);
             
+            // Okay (yaw side-side)
             Test(InputSystem.GetDevice<Gamepad>().rightStick.left.ReadValue(), Direction.Left, ThrusterBehavior.AddTorque);
-            Test(InputSystem.GetDevice<Gamepad>().rightStick.right.ReadValue(), Direction.Right, ThrusterBehavior.AddTorque);
+            Test(InputSystem.GetDevice<Gamepad>().rightStick.right.ReadValue(), Direction.Left, ThrusterBehavior.AddTorque);
+            
+            // Okay (pitch up-down)
             Test(InputSystem.GetDevice<Gamepad>().rightStick.up.ReadValue(), Direction.Up, ThrusterBehavior.AddTorque);
             Test(InputSystem.GetDevice<Gamepad>().rightStick.down.ReadValue(), Direction.Down, ThrusterBehavior.AddTorque);
         }

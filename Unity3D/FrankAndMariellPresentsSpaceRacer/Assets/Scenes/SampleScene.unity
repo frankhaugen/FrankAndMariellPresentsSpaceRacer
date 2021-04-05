@@ -231,7 +231,7 @@ Transform:
   m_LocalScale: {x: 4.01, y: 0.22, z: 4.12}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 90.64, y: 0, z: 0}
 --- !u!1 &159363104
 GameObject:
@@ -733,57 +733,53 @@ MonoBehaviour:
   Volume: 0
   Density: 100
   Thrusters:
-  - KeyCode: 119
+  - KeyCode: 37
     Power: 1200
     Direction: 0
     ThrusterBehavior: 0
-  - KeyCode: 115
+  - KeyCode: 33
     Power: 100
     Direction: 1
     ThrusterBehavior: 0
-  - KeyCode: 97
+  - KeyCode: 15
     Power: 100
     Direction: 2
     ThrusterBehavior: 0
-  - KeyCode: 100
+  - KeyCode: 18
     Power: 100
     Direction: 3
     ThrusterBehavior: 0
-  - KeyCode: 32
+  - KeyCode: 1
     Power: 100
     Direction: 4
     ThrusterBehavior: 0
-  - KeyCode: 99
+  - KeyCode: 17
     Power: 100
     Direction: 5
     ThrusterBehavior: 0
-  - KeyCode: 273
-    Power: 0.5
-    Direction: 3
-    ThrusterBehavior: 1
-  - KeyCode: 274
-    Power: 0.5
-    Direction: 2
-    ThrusterBehavior: 1
-  - KeyCode: 276
-    Power: 0.5
-    Direction: 5
-    ThrusterBehavior: 1
-  - KeyCode: 275
-    Power: 0.5
-    Direction: 4
-    ThrusterBehavior: 1
-  - KeyCode: 113
+  - KeyCode: 63
     Power: 0.5
     Direction: 0
     ThrusterBehavior: 1
-  - KeyCode: 101
+  - KeyCode: 64
     Power: 0.5
     Direction: 1
     ThrusterBehavior: 1
-  - KeyCode: 101
+  - KeyCode: 61
     Power: 0.5
-    Direction: 1
+    Direction: 2
+    ThrusterBehavior: 1
+  - KeyCode: 62
+    Power: 0.5
+    Direction: 3
+    ThrusterBehavior: 1
+  - KeyCode: 31
+    Power: 0.5
+    Direction: 6
+    ThrusterBehavior: 1
+  - KeyCode: 19
+    Power: 0.5
+    Direction: 7
     ThrusterBehavior: 1
 --- !u!65 &872591384
 BoxCollider:
@@ -805,13 +801,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 872591382}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -5.039}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1096707048}
   - {fileID: 1482537982}
   - {fileID: 1518571120}
+  - {fileID: 1245971498}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -958,7 +955,7 @@ Transform:
   - {fileID: 304446004}
   - {fileID: 1956979187}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &959797073
 GameObject:
@@ -1078,7 +1075,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &963194226
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1357,7 +1354,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!81 &1245971496
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1416,13 +1413,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1245971495}
-  m_LocalRotation: {x: 0.11849062, y: 0, z: 0, w: 0.9929552}
-  m_LocalPosition: {x: 0, y: 4.17, z: -8.39}
+  m_LocalRotation: {x: 0.08715578, y: 0, z: 0, w: 0.9961947}
+  m_LocalPosition: {x: 0, y: 2, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 13.61, y: 0, z: 0}
+  m_Father: {fileID: 872591385}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 10, y: 0, z: 0}
 --- !u!1 &1472247116
 GameObject:
   m_ObjectHideFlags: 0
@@ -1760,7 +1757,7 @@ Transform:
   - {fileID: 360506139}
   - {fileID: 1685421576}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1685421575
 GameObject:
@@ -1974,5 +1971,5 @@ Transform:
   - {fileID: 1472247117}
   - {fileID: 841710533}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
