@@ -2,42 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdf26739-9294-413b-b020-49ddda29843e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Code/IO.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/IO/Json.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/IO/Json/JsonConfiguration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/IO/Json/JsonConfiguration.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/IO/Json/JsonContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/IO/Json/JsonContext.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/IO/Json/JsonEntity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/IO/Json/JsonEntity.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/IO/Json/JsonExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/IO/Json/JsonExtensions.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Legacy.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Legacy/LaserScript.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Legacy/LaserScript.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Legacy/Movement.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Legacy/Movement.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Legacy/XwingMove.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Legacy/XwingMove.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Models.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Models/World.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Models/World/PlanetState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Models/World/PlanetState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/PolarCoordinates.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/PolarCoordinates.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/WorldGeneration.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/WorldGeneration/CoordinateGeneration.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/PlanetState.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Extensions.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Extensions/FileInfoExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Extensions/FileInfoExtensions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Extensions/GameObjectExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Extensions/GameObjectExtensions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Extensions/Vector3Extensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Extensions/Vector3Extensions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/IO/FileHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/IO/FileHandler.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/IO/Json/JsonWrapper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/IO/Json/JsonWrapper.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Models/Game.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Models/Game/Waypoint.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Models/Game/Waypoint.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Movement.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Movement/Calculators.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Movement/Calculators/AircraftLiftCalculator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Movement/Calculators/AircraftLiftCalculator.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Projectile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Projectile.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Startup.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Startup/StartSession.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Startup/StartSession.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Store.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Store/SessionStore.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Store/SessionStore.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/WaypointScript.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/WaypointScript.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/WorldGeneration/WaypointGenerator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/WorldGeneration/WaypointGenerator.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data/PlanetStates.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data/Waypoints.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Stride3D/FrankAndMariellPresentsSpaceRacer/TestMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Stride3D/FrankAndMariellPresentsSpaceRacer/TestMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Stride3D/FrankAndMariellPresentsSpaceRacer/Thruster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Stride3D/FrankAndMariellPresentsSpaceRacer/Thruster.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FrankAndMariellPresentsSpaceRacer/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FrankAndMariellPresentsSpaceRacer/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FrankAndMariellPresentsSpaceRacer/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FrankAndMariellPresentsSpaceRacer/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FrankAndMariellPresentsSpaceRacer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FrankAndMariellPresentsSpaceRacer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Deprecated/DirectionalThrust.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Deprecated/DirectionalThrust.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Deprecated/OldThruster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Deprecated/OldThruster.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Deprecated/ShipConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Deprecated/ShipConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Deprecated/ThrusterConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Deprecated/ThrusterConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Enums/Direction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Enums/Direction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Craft.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Craft.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/IO/Json/JsonContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/IO/Json/JsonContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/IO/Json/JsonEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/IO/Json/JsonEntity.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/MapGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/MapGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Thruster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Thruster.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Models/World/PlanetState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Models/World/PlanetState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Turret.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Turret.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/PlanetState.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,11 +62,27 @@
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Code/IO/Json/IJsonContext.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/IO/Json/JsonExtensions.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/Models/World/PlanetState.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/IO/Json/TestTest.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/IO/FileWriter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/IO/FileHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Extensions/FileInfoExtensions.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/MapGenerator.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Models/World/PlanetState.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Models/Game/Waypoints.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Waypoint.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Models/Game/Waypoint.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Extensions/GameObjectExtensions.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/WaypointScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Store/SessionStore.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Startup/StartSession.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/IO/Json/JsonEntity.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/IO/Json/JsonContext.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/MapGenerator.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/WorldGeneration/WaypointGenerator.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Projectile.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Extensions/Vector3Extensions.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Turret.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Craft.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Movement/Calculators/AircraftLiftCalculator.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1qfPFN1Z9q6pThOuBhlTAxPYyNt" />
@@ -106,7 +130,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617467572333</updated>
-      <workItem from="1617467588025" duration="5286000" />
+      <workItem from="1617467588025" duration="32723000" />
     </task>
     <servers />
   </component>
@@ -126,37 +150,5 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Code/IO/Json/JsonContext.cs</url>
-          <line>81</line>
-          <properties documentPath="C:\repos\frankhaugen\FrankAndMariellPresentsSpaceRacer\Unity3D\FrankAndMariellPresentsSpaceRacer\Assets\Code\IO\Json\JsonContext.cs" initialLine="68" containingFunctionPresentation="method 'GetById'">
-            <startOffsets>
-              <option value="2495" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2511" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Code/IO/Json/JsonContext.cs</url>
-          <line>108</line>
-          <properties documentPath="C:\repos\frankhaugen\FrankAndMariellPresentsSpaceRacer\Unity3D\FrankAndMariellPresentsSpaceRacer\Assets\Code\IO\Json\JsonContext.cs" initialLine="86" containingFunctionPresentation="method 'Add'">
-            <startOffsets>
-              <option value="3258" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3259" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

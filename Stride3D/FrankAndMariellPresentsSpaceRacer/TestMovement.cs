@@ -8,12 +8,14 @@ using Stride.Input;
 using Stride.Physics;
 using Stride.Rendering;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace FrankAndMariellPresentsSpaceRacer
 {
     public class TestMovement : SyncScript
     {
+        public List<Thruster> Thrusters { get; set; }
         //public List<Thruster> Thrusters = new List<Thruster>();
         //public List<string> Thrusters = new List<string>();
         //public List<Thruster> Thrusters = new List<Thruster>();

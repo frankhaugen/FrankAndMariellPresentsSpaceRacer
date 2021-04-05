@@ -3,13 +3,9 @@
 namespace Code.IO.Json
 {
     [Serializable]
-    public class JsonEntity
+    public abstract class JsonEntity
     {
-        public Guid Id;
-
-        public JsonEntity()
-        {
-            Id = Guid.NewGuid();;
-        }
+        public ulong Id;
+        public string SessionId;
     }
 }

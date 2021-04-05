@@ -2,131 +2,64 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using UnityEngine;
+using Code.Extensions;
+using Code.Store;
 
 namespace Code.IO.Json
 {
-    [Serializable]
-    public class JsonContainer<T>
+    public class JsonContext<T> where T : JsonEntity
     {
-        public List<T> Entities;
-    }
-    
-    public class JsonContext<TEntity> where TEntity : JsonEntity, new()
-    {
-
-        private JsonContainer<TEntity> _jsonContainer;
-        private List<TEntity> _collection;
-        private readonly List<TEntity> _tempCollection;
-        private readonly JsonConfiguration _options;
-        private readonly string _filePath;
+        private List<T> _collection;
+        private readonly List<T> _tempCollection;
         private bool _unsavedChanges;
 
-        public JsonContext(JsonConfiguration options = null)
+        private readonly FileInfo _file;
+
+        public JsonContext()
         {
-            _options = options ?? new JsonConfiguration();
+            _collection = new List<T>();
+            _tempCollection = new List<T>();
+            _file = new FileInfo(Path.Combine(Directory.GetCurrentDirectory(), "Data", $"{typeof(T).Name}s.json"));
             
-            _collection = new List<TEntity>();
-            _tempCollection = new List<TEntity>();
-
-            if (string.IsNullOrWhiteSpace(_options!.Folder)) _options.Folder = Path.Combine(Directory.GetCurrentDirectory(), "Data");
-            _filePath = Path.Combine(_options.Folder, typeof(TEntity).Name + ".json");
-            Setup();
+            if (_file.Directory != null && !_file.Directory.Exists) _file.Directory.Create();
+            if (!_file.Exists) _file.WriteObject(new JsonWrapper<T>(){Entities = new List<T>()});
+            ReadFile();
         }
+        private void SaveFile() => _file.WriteObject(new JsonWrapper<T> {Entities = _collection});
+        private void ReadFile() => _collection = _file.ReadObject<JsonWrapper<T>>().Entities;
 
-        private void Setup()
-        {
-            if (!Directory.Exists(_options.Folder))
-            {
-                Directory.CreateDirectory(_options.Folder!);
-            }
+        public void Add(List<T> items) => items.ForEach(Add);
+        public IQueryable<T> GetQueryable() => _collection.AsQueryable();
+        public T GetById(ulong id) => _collection.FirstOrDefault(x => x.Id == id)!;
 
-            if (!File.Exists(_filePath))
-            {
-                File.WriteAllText(_filePath, _jsonContainer.ToJson());
-            }
-            // _collection = File.ReadAllText(_filePath).FromJson<List<TEntity>>();
-            _jsonContainer = File.ReadAllText(_filePath).FromJson<JsonContainer<TEntity>>();
-        }
-
-        public IEnumerable<TEntity> GetCollection()
-        {
-            if (!_collection.Any())
-                _collection = File.ReadAllText(_filePath).FromJson<List<TEntity>>();
-
-            return _collection;
-        }
-
-        private List<TEntity> GetEntities()
-        {
-            var json = File.ReadAllText(_filePath);
-
-            Debug.Log(json);
-            var jsonContainer = JsonUtility.FromJson<JsonContainer<TEntity>>(json);
-            
-            return jsonContainer.Entities;
-        }
-
-        public IQueryable<TEntity> GetQueryable()
-        {
-            if (!_collection.Any())
-                _collection = File.ReadAllText(_filePath).FromJson<List<TEntity>>();
-
-            return _collection.AsQueryable();
-        }
-
-        public TEntity GetById(Guid id)
-        {
-            var entities = GetEntities().FirstOrDefault(x => x.Id == id)!;
-
-            return entities;
-        }
-
-        public void Delete(Guid id)
+        public void Delete(ulong id)
         {
             var entity = _collection.FirstOrDefault(x => x.Id == id)!;
             _collection.Remove(entity);
             _unsavedChanges = true;
         }
 
-        public void Add(TEntity item)
+        public void Add(T item)
         {
-            Debug.Log(item.Id);
-
-            // _tempCollection.Add(item);
-            // _unsavedChanges = true;
-
-            var entities = GetEntities();
-            Debug.Log(entities.Count());
-            entities.Add(item);
-            Debug.Log(entities.Count());
-
-            _jsonContainer.Entities = entities;
-            
-            var json = JsonUtility.ToJson(_jsonContainer, true);
-            Debug.Log(json);
-            File.WriteAllText(_filePath, json);
-        }
-
-        public void Add(List<TEntity> items)
-        {
-            _tempCollection.AddRange(items);
+            item.Id = Convert.ToUInt64(_collection.LongCount() + 1);
+            item.SessionId = SessionStore.SessionId;
+            _tempCollection.Add(item);
             _unsavedChanges = true;
         }
-
-        public bool SaveChanges()
+      
+        public void SaveChanges()
         {
-            if (!_unsavedChanges) return true;
+            if (!_unsavedChanges) return;
 
-            GetCollection();
+            ReadFile();
             _collection.AddRange(_tempCollection);
-            File.WriteAllText(_filePath, _collection.ToJson());
-            _tempCollection.Clear();
 
-            GetCollection();
+            SaveFile();
+            
+            _tempCollection.Clear();
+            ReadFile();
 
             _unsavedChanges = false;
-            return true;
         }
 
         public void DiscardChanges()
@@ -134,7 +67,5 @@ namespace Code.IO.Json
             _tempCollection.Clear();
             _unsavedChanges = false;
         }
-
-        public string GetFilepath() => _filePath;
     }
 }

@@ -1,35 +1,60 @@
 using System;
 using System.Diagnostics;
+using System.Linq;
+using Code.Extensions;
 using UnityEngine;
+using Debug = UnityEngine.Debug;
 
 namespace Code
 {
     public class Turret : MonoBehaviour
     {
         [SerializeField] public GameObject Target;
-        [SerializeField] public float Strength;
         
         [SerializeField]
         [Range(0f, 360f)]
         public float Precision;
 
+        [SerializeField] 
+        [Range(0f, 10f)]
+        public float TurnSpeed;
+
+        [SerializeField]
+        [Range(0f, 1000f)]
+        public float ProjectileSpeed;
+
+        [SerializeField]
+        [Range(1, 60)]
+        public int ProjectileLifetime;
+
         private Stopwatch _stopwatch;
+        private GameObject _aimpoint;
 
         private void Start()
         {
             _stopwatch = new Stopwatch();
+            _aimpoint = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+
+            _aimpoint.transform.localScale = _aimpoint.transform.localScale * 0.2f;
+            _aimpoint.name = "Aimpoint";
+            _aimpoint.GetComponent<MeshRenderer>().materials.First().color = Color.red;
         }
 
         void Update()
         {
-            var targetDirection = Target.transform.position - transform.position;
-
-            var targetDirectionRotation = Quaternion.LookRotation (targetDirection);
-            var speed = Mathf.Min (Strength * Time.deltaTime, 1);
-            var lerp = Quaternion.Lerp (transform.rotation, targetDirectionRotation, speed);
-            var angle = Vector3.Angle(targetDirection, transform.forward);
+            // var leadPosition = GetLeadPosition();
+            var leadPosition = GetLeadPosition();
+            _aimpoint.transform.position = leadPosition;
 
             
+            // var targetDirection = Target.transform.position - transform.position;
+            var targetDirection = leadPosition - transform.position;
+            
+
+            var targetDirectionRotation = Quaternion.LookRotation (targetDirection);
+            var speed = Mathf.Min (TurnSpeed * Time.deltaTime, 1);
+            var lerp = Quaternion.Lerp (transform.rotation, targetDirectionRotation, speed);
+            var angle = Vector3.Angle(targetDirection, transform.forward);
             
             transform.rotation = lerp;
             if (_stopwatch.Elapsed.TotalSeconds > TimeSpan.FromSeconds(1).TotalSeconds)
@@ -37,48 +62,58 @@ namespace Code
                 _stopwatch.Stop();
                 _stopwatch.Reset();
             }
-            
+            Debug.DrawLine(transform.position, _aimpoint.transform.position, Color.blue, 0.01f, false);
+
             if (angle < Precision && !_stopwatch.IsRunning)
             {
                 _stopwatch.Start();
+                // var ray = new Ray(transform.position, leadPosition);
+                Debug.DrawRay(transform.position, targetDirection, Color.green, 1f, false);
                 
                 var bullet = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-                bullet.transform.position = transform.forward;
-                bullet.AddComponent<LifetimeLimiter>().TimeSpan = TimeSpan.FromSeconds(3);
-                bullet.transform.rotation = transform.rotation;
+                bullet.transform.position = transform.position;
+
+                bullet.AddComponent<LifetimeLimiter>().TimeSpan = TimeSpan.FromSeconds(ProjectileLifetime);
+                bullet.AddComponent<Projectile>();
+                // bullet.transform.rotation = transform.rotation;
+                bullet.transform.rotation = Quaternion.Euler(targetDirection);
                 bullet.transform.localScale = Vector3.one * 0.4f; 
                 
                 var bulletRigidbody = bullet.AddComponent<Rigidbody>();
-                bulletRigidbody.mass = 10f;
+                bulletRigidbody.mass = 0f;
+                bulletRigidbody.drag = 0f;
+                bulletRigidbody.angularDrag = 0f;
                 bulletRigidbody.useGravity = false;
-                bulletRigidbody.velocity = Vector3.ClampMagnitude(transform.forward, 1f) * 10f;
+                bulletRigidbody.velocity = transform.forward * ProjectileSpeed;
             }
         }
 
         private Vector3 GetLeadPosition()
         {
-            var shotSpeed = 10f;
+            var shotSpeed = ProjectileSpeed;
  
             var shooterPosition = transform.position;
             var targetPosition = Target.transform.position;
                 
             var shooterVelocity = Vector3.zero;
-            var targetVelocity = Target.GetComponent<Rigidbody>() ? Target.GetComponent<Rigidbody>().velocity : Vector3.zero;
- 
-            var interceptPoint = FirstOrderIntercept
-            (
-                shooterPosition,
-                shooterVelocity,
-                shotSpeed,
-                targetPosition,
-                targetVelocity
-            );
+            var targetVelocity = Target.GetComponent<Rigidbody>().velocity;
+
+            var interceptPoint = shooterPosition.CalculateInterceptionPoint3D(shotSpeed, targetPosition, targetVelocity);
+            
+            // var interceptPoint = FirstOrderIntercept
+            // (
+            //     shooterPosition,
+            //     shooterVelocity,
+            //     shotSpeed,
+            //     targetPosition,
+            //     targetVelocity
+            // );
 
             return interceptPoint;
         }
         
         //first-order intercept using absolute target position
-        public static Vector3 FirstOrderIntercept
+        private static Vector3 FirstOrderIntercept
         (
             Vector3 shooterPosition,
             Vector3 shooterVelocity,
@@ -99,7 +134,7 @@ namespace Code
         }
         
         //first-order intercept using relative target position
-        public static float FirstOrderInterceptTime
+        private static float FirstOrderInterceptTime
         (
             float shotSpeed,
             Vector3 targetRelativePosition,

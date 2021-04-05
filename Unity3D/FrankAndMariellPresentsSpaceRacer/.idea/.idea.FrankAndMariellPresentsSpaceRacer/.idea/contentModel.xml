@@ -19,12 +19,19 @@
           <e p="Enums" t="Include">
             <e p="Direction.cs" t="Include" />
           </e>
+          <e p="Extensions" t="Include">
+            <e p="FileInfoExtensions.cs" t="Include" />
+            <e p="GameObjectExtensions.cs" t="Include" />
+            <e p="Vector3Extensions.cs" t="Include" />
+          </e>
           <e p="IO" t="Include">
+            <e p="FileHandler.cs" t="Include" />
             <e p="Json" t="Include">
               <e p="JsonConfiguration.cs" t="Include" />
               <e p="JsonContext.cs" t="Include" />
               <e p="JsonEntity.cs" t="Include" />
               <e p="JsonExtensions.cs" t="Include" />
+              <e p="JsonWrapper.cs" t="Include" />
             </e>
           </e>
           <e p="Legacy" t="Include">
@@ -54,16 +61,35 @@
           <e p="LifetimeLimiter.cs" t="Include" />
           <e p="MapGenerator.cs" t="Include" />
           <e p="Models" t="Include">
+            <e p="Game" t="Include">
+              <e p="Waypoint.cs" t="Include" />
+            </e>
             <e p="World" t="Include">
               <e p="PlanetState.cs" t="Include" />
             </e>
           </e>
+          <e p="Movement" t="Include">
+            <e p="Calculators" t="Include">
+              <e p="AircraftLiftCalculator.cs" t="Include" />
+            </e>
+          </e>
           <e p="NamedArrayAttribute.cs" t="Include" />
           <e p="PolarCoordinates.cs" t="Include" />
+          <e p="Projectile.cs" t="Include" />
           <e p="ReadOnlyDrawer.cs" t="Include" />
+          <e p="Startup" t="Include">
+            <e p="StartSession.cs" t="Include" />
+          </e>
+          <e p="Store" t="Include">
+            <e p="SessionStore.cs" t="Include" />
+          </e>
           <e p="Thruster.cs" t="Include" />
           <e p="ThrusterBehavior.cs" t="Include" />
           <e p="Turret.cs" t="Include" />
+          <e p="WaypointScript.cs" t="Include" />
+          <e p="WorldGeneration" t="Include">
+            <e p="WaypointGenerator.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="FrankAndMariellPresentsSpaceRacer.sln" t="IncludeFlat" />

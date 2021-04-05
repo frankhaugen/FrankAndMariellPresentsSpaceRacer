@@ -1,4 +1,3 @@
-using System;
 using Code.IO.Json;
 using Code.Libraries.Dynagon;
 using Code.Models.World;
@@ -18,15 +17,13 @@ namespace Code
         {
             _context = new JsonContext<PlanetState>();
 
-            PlanetState = new PlanetState();
-            PlanetState.Id = Guid.NewGuid();
+            // PlanetState = new PlanetState();
             PlanetState.Name = "Perle";
             PlanetState.Position = new Vector3(40f, 0f, 40f);
             PlanetState.Radius = 20f;
             
             _context.Add(PlanetState);
-            // _context.SaveChanges();
-            Debug.Log(_context.GetFilepath());
+            _context.SaveChanges();
 
             GeneratePlanet();
         }

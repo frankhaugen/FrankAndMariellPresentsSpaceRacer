@@ -1,0 +1,20 @@
+{
+    "Entities": [
+        {
+            "Id": 1,
+            "SessionId": "3541b4b7-a29c-42e5-969a-ef440885369b",
+            "Stage": 1,
+            "Timestamp": 1617619704827,
+            "DateTimeOffset": "05.04.2021 10.48.24 +00:00",
+            "What": "Player Craft"
+        },
+        {
+            "Id": 2,
+            "SessionId": "4f413370-09cb-4217-9659-17fd84016963",
+            "Stage": 1,
+            "Timestamp": 1617619762785,
+            "DateTimeOffset": "05.04.2021 10.49.22 +00:00",
+            "What": "Player Craft"
+        }
+    ]
+}

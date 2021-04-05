@@ -7,10 +7,10 @@ namespace FrankAndMariellPresentsSpaceRacer
 {
     public class Thruster
     {
-        public Keys Key;
-        public float Power;
-        public Direction Direction;
-        public ThrusterBehavior ThrusterBehavior;
+        public Keys Key { get; set; }
+        public float Power { get; set; }
+        public Direction Direction { get; set; }
+        public ThrusterBehavior ThrusterBehavior { get; set; }
 
         public void Execute(RigidbodyComponent rigidbody)
         {

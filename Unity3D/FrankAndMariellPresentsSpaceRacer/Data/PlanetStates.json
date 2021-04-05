@@ -1,0 +1,730 @@
+{
+    "Entities": [
+        {
+            "Id": 1,
+            "SessionId": "",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 2,
+            "SessionId": "",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 3,
+            "SessionId": "",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 4,
+            "SessionId": "",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 5,
+            "SessionId": "",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 6,
+            "SessionId": "",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 7,
+            "SessionId": "",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 8,
+            "SessionId": "",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 9,
+            "SessionId": "",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 10,
+            "SessionId": "",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 11,
+            "SessionId": "",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 12,
+            "SessionId": "",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 13,
+            "SessionId": "",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 14,
+            "SessionId": "",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 15,
+            "SessionId": "",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 16,
+            "SessionId": "",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 17,
+            "SessionId": "",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 18,
+            "SessionId": "",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 19,
+            "SessionId": "",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 20,
+            "SessionId": "",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 21,
+            "SessionId": "3541b4b7-a29c-42e5-969a-ef440885369b",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 22,
+            "SessionId": "4f413370-09cb-4217-9659-17fd84016963",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 23,
+            "SessionId": "81fdb466-e6e4-468b-bf19-b97e9c38dcb5",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 24,
+            "SessionId": "85a40a00-bd63-4ff3-8097-378f068c5f7c",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 25,
+            "SessionId": "95d6a186-0f3d-490b-b65f-dd57fbd3a511",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 26,
+            "SessionId": "a3001206-4043-40ca-afbf-c6f2d88a3c7f",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 27,
+            "SessionId": "03490920-a502-4099-92f8-cdc566321635",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 28,
+            "SessionId": "7b03568d-ce7c-4da2-ad6e-a89ac6f8d729",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 29,
+            "SessionId": "8130ebce-5377-4da6-b782-0260886f94a4",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 30,
+            "SessionId": "fc65d9a8-764b-4161-80a0-917961aea011",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 31,
+            "SessionId": "944a25fb-602a-4960-9ea7-8054dd0e02e8",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 32,
+            "SessionId": "34bccaa4-196e-4a07-9065-66ec5e5df7f1",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 33,
+            "SessionId": "e2027e00-ddcf-4cbd-b222-9b12fae7462e",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 34,
+            "SessionId": "f0f2f883-fdee-41f0-893a-37844cff420a",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 35,
+            "SessionId": "6fc0ab5e-c410-4b6a-8cab-01d25b1c822a",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 36,
+            "SessionId": "a2205d67-6335-42bb-ba2e-f874326c6173",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 37,
+            "SessionId": "c31dc2e5-997a-4d3c-b682-00e95596d974",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 38,
+            "SessionId": "e9d76ae0-f43d-4607-89bf-ebd3fe893c1e",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 39,
+            "SessionId": "dd3923c7-caad-4d6e-a621-cd07299bcee2",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 40,
+            "SessionId": "b8be29b2-ba32-4174-b4a6-5fa158bfcfbc",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 41,
+            "SessionId": "c8a17007-3908-4ad3-a163-3963fb1bf601",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 42,
+            "SessionId": "4ed23d0c-7a7c-4e11-ba64-a86755aa890d",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 43,
+            "SessionId": "ff3441b6-1dc5-4349-8c04-b3e42e7b1b0d",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 44,
+            "SessionId": "908ee5a4-dc3b-44d6-9c72-ff5692e04f09",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 45,
+            "SessionId": "79109aa5-c3ae-44e4-84f5-3e37a2d4891d",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 46,
+            "SessionId": "b12c9bbb-134e-4733-b515-4f09810dc117",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 47,
+            "SessionId": "cb76c90a-f57d-450f-986f-b0a7a4f0e749",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 48,
+            "SessionId": "9116109e-ad39-4782-97b7-c68f4c19f079",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 49,
+            "SessionId": "ec47a1fc-60e7-4fe8-b493-966b0fdd4962",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 50,
+            "SessionId": "d92c0cd2-4995-4349-8af9-a3e9a7347a4b",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 51,
+            "SessionId": "4ce66fad-90eb-4057-99dc-10e46160d5c3",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 52,
+            "SessionId": "8c283d0e-271e-41ab-8b8d-7f8f89e6ba25",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 53,
+            "SessionId": "6bd4ab3d-b7e7-4842-a84a-2c8ddb519e25",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 54,
+            "SessionId": "8076ac7c-1cb3-48cc-81bf-42bd868a9035",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 55,
+            "SessionId": "ca74c095-5b86-4f4d-9d3d-daefb55c858e",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 56,
+            "SessionId": "7e7ff3d8-85a3-41a4-b640-cccb8a5aabce",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 57,
+            "SessionId": "126a0917-5e28-411e-933a-1e6f0ffb0fe3",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 58,
+            "SessionId": "5df0d34f-5a21-49b3-a4af-36c065ca2c43",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 59,
+            "SessionId": "a3033fa1-0dd5-44e6-bd49-7f0d8be76ac1",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 60,
+            "SessionId": "2d5558ad-04d4-4ecc-bfc3-91896f3241b9",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 61,
+            "SessionId": "77cd4033-1a17-4253-b43f-77d6ce5c8249",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 62,
+            "SessionId": "4861fe68-56cb-4802-8ab1-b488ba607fd5",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 63,
+            "SessionId": "5963a1ea-f6e5-49f0-b8fa-e189c224779d",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 64,
+            "SessionId": "6a962668-80e5-4257-bab2-6d261b9e6cc6",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 65,
+            "SessionId": "b1007f12-e37b-4cf6-a0ac-a61117989187",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        },
+        {
+            "Id": 66,
+            "SessionId": "00c9de1e-dfbc-400d-a075-65d65d461f79",
+            "Name": "Perle",
+            "Position": {
+                "x": 40.0,
+                "y": 0.0,
+                "z": 40.0
+            },
+            "Radius": 20.0
+        }
+    ]
+}

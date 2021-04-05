@@ -9,6 +9,7 @@ namespace Code
         private Rigidbody _rigidbody;
         private IEnumerable<Mesh> _meshes;
         private Vector3 _localScale;
+        private float _turnSpeedMultiplyer = 10f;
     
         [ReadOnly] public float Mass;
         [ReadOnly] public float Volume;
@@ -25,14 +26,30 @@ namespace Code
 
             SetVolume();
             SetMass();
+            
+            _rigidbody.drag = Mathf.Epsilon;
         }
         
         private void FixedUpdate()
         {
+            // calculateForces(1f);
+
+            Debug.Log(Input.GetJoystickNames());
+            
             if (!Input.anyKey) return;
-            Thrusters.Where(x => Input.GetKey(x.KeyCode)).ToList().ForEach(x => x.Execute(_rigidbody));
+            // Thrusters.Where(x => Input.GetKey(x.KeyCode)).ToList().ForEach(x => x.Execute(_rigidbody));
+            
+            // if (Input.anyKey)
+            // {
+            //     if (Input.GetKey(KeyCode.W)) { _rigidbody.AddForce(transform.forward); }
+            //     if (Input.GetKey(KeyCode.S)) { _rigidbody.AddForce(transform.forward * -1); }
+            //     if (Input.GetKey(KeyCode.A)) { transform.Rotate(Vector3.up * (_turnSpeedMultiplyer * Time.deltaTime * -1)); }
+            //     if (Input.GetKey(KeyCode.D)) { transform.Rotate(Vector3.up * (_turnSpeedMultiplyer * Time.deltaTime)); }
+            // }
         }
         
+
+
         private void SetVolume()
         {
             foreach (var mesh in _meshes)
