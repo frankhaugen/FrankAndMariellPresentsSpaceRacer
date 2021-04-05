@@ -12,8 +12,12 @@ namespace Code
         [SerializeField] public Direction Direction;
         [SerializeField] public ThrusterBehavior ThrusterBehavior;
 
-        public void Execute(Rigidbody rigidbody)
+        private float _force;
+        
+        public void Execute(Rigidbody rigidbody, float force = 1f)
         {
+            _force = force;
+            
             switch (ThrusterBehavior)
             {
                 case ThrusterBehavior.AddForce:
@@ -26,9 +30,9 @@ namespace Code
                     throw new ArgumentOutOfRangeException();
             }
         }
-
-        private void Move(Rigidbody rigidbody) => rigidbody.AddRelativeForce(GetDirection() * Power);
-        private void Roll(Rigidbody rigidbody) => rigidbody.AddRelativeTorque(GetDirection() * Power);
+        
+        private void Move(Rigidbody rigidbody) => rigidbody.AddRelativeForce(GetDirection() * (_force * Power));
+        private void Roll(Rigidbody rigidbody) => rigidbody.AddRelativeTorque(GetDirection() * (_force * Power));
         
         private Vector3 GetDirection() =>
             Direction switch

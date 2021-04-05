@@ -709,6 +709,7 @@ GameObject:
   - component: {fileID: 872591386}
   - component: {fileID: 872591384}
   - component: {fileID: 872591387}
+  - component: {fileID: 872591388}
   m_Layer: 0
   m_Name: Player Craft
   m_TagString: Player
@@ -737,51 +738,51 @@ MonoBehaviour:
     Direction: 0
     ThrusterBehavior: 0
   - KeyCode: 115
-    Power: 50
+    Power: 100
     Direction: 1
     ThrusterBehavior: 0
   - KeyCode: 97
-    Power: 50
+    Power: 100
     Direction: 2
     ThrusterBehavior: 0
   - KeyCode: 100
-    Power: 50
+    Power: 100
     Direction: 3
     ThrusterBehavior: 0
   - KeyCode: 32
-    Power: 50
+    Power: 100
     Direction: 4
     ThrusterBehavior: 0
   - KeyCode: 99
-    Power: 50
+    Power: 100
     Direction: 5
     ThrusterBehavior: 0
   - KeyCode: 273
-    Power: 1
+    Power: 0.5
     Direction: 3
     ThrusterBehavior: 1
   - KeyCode: 274
-    Power: 1
+    Power: 0.5
     Direction: 2
     ThrusterBehavior: 1
   - KeyCode: 276
-    Power: 1
+    Power: 0.5
     Direction: 5
     ThrusterBehavior: 1
   - KeyCode: 275
-    Power: 1
+    Power: 0.5
     Direction: 4
     ThrusterBehavior: 1
   - KeyCode: 113
-    Power: 1
+    Power: 0.5
     Direction: 0
     ThrusterBehavior: 1
   - KeyCode: 101
-    Power: 1
+    Power: 0.5
     Direction: 1
     ThrusterBehavior: 1
   - KeyCode: 101
-    Power: 1
+    Power: 0.5
     Direction: 1
     ThrusterBehavior: 1
 --- !u!65 &872591384
@@ -844,6 +845,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &872591388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872591382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15320ba98a74412fae1d2558ff8e956c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &907651758
 GameObject:
   m_ObjectHideFlags: 0

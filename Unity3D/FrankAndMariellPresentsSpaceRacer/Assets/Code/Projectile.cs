@@ -19,7 +19,7 @@ namespace Code
         {
             if (thing.IsPlayer())
             {
-                Debug.Log(thing.name);
+                // Debug.Log(thing.name);
                 Destroy(gameObject);
             }
         }

@@ -1,6 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using Code.Enums;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Controls;
 
 namespace Code
 {
@@ -34,9 +38,18 @@ namespace Code
         {
             // calculateForces(1f);
 
-            Debug.Log(Input.GetJoystickNames());
+            // Debug.Log($"{Gamepad.shortDisplayName}");
+
+            try
+            {
+                HandleInput();
+            }
+            catch (Exception e)
+            {
+                Debug.LogError(e);;
+            }
             
-            if (!Input.anyKey) return;
+            // if (!Input.anyKey) return;
             // Thrusters.Where(x => Input.GetKey(x.KeyCode)).ToList().ForEach(x => x.Execute(_rigidbody));
             
             // if (Input.anyKey)
@@ -47,8 +60,45 @@ namespace Code
             //     if (Input.GetKey(KeyCode.D)) { transform.Rotate(Vector3.up * (_turnSpeedMultiplyer * Time.deltaTime)); }
             // }
         }
-        
 
+        private void HandleInput()
+        {
+            var leftStick = InputSystem.GetDevice<Gamepad>().leftStick.ReadValue();
+            var rightStick = InputSystem.GetDevice<Gamepad>().rightStick.ReadValue();
+            var deadzone = 0.15f;
+            
+            if (leftStick.y > deadzone) Thrusters.Where(x => x.Direction == Direction.Forward && x.ThrusterBehavior == ThrusterBehavior.AddForce).ToList().ForEach(x => x.Execute(_rigidbody, leftStick.y));
+            if (leftStick.y < -deadzone) Thrusters.Where(x => x.Direction == Direction.Backward && x.ThrusterBehavior == ThrusterBehavior.AddForce).ToList().ForEach(x => x.Execute(_rigidbody, leftStick.y));
+            
+            if (leftStick.x > deadzone) Thrusters.Where(x => x.Direction == Direction.Left && x.ThrusterBehavior == ThrusterBehavior.AddForce).ToList().ForEach(x => x.Execute(_rigidbody, leftStick.x));
+            if (leftStick.x < -deadzone) Thrusters.Where(x => x.Direction == Direction.Right && x.ThrusterBehavior == ThrusterBehavior.AddForce).ToList().ForEach(x => x.Execute(_rigidbody, leftStick.x));
+            
+
+            if (rightStick.x > deadzone) Thrusters.Where(x => x.Direction == Direction.Up && x.ThrusterBehavior == ThrusterBehavior.AddTorque).ToList().ForEach(x => x.Execute(_rigidbody, rightStick.x));
+            if (rightStick.x < -deadzone) Thrusters.Where(x => x.Direction == Direction.Down && x.ThrusterBehavior == ThrusterBehavior.AddTorque).ToList().ForEach(x => x.Execute(_rigidbody, rightStick.x));
+            
+            if (rightStick.y > deadzone) Thrusters.Where(x => x.Direction == Direction.Left && x.ThrusterBehavior == ThrusterBehavior.AddTorque).ToList().ForEach(x => x.Execute(_rigidbody, rightStick.y));
+            if (rightStick.y < -deadzone) Thrusters.Where(x => x.Direction == Direction.Right && x.ThrusterBehavior == ThrusterBehavior.AddTorque).ToList().ForEach(x => x.Execute(_rigidbody, rightStick.y));
+            
+            Debug.Log($"LeftStick: {leftStick} RightStick: {rightStick}");
+        }
+
+        private void Test2()
+        {
+            Test(InputSystem.GetDevice<Gamepad>().leftStick.left.ReadValue(), Direction.Left, ThrusterBehavior.AddForce);
+            Test(InputSystem.GetDevice<Gamepad>().leftStick.right.ReadValue(), Direction.Right, ThrusterBehavior.AddForce);
+            Test(InputSystem.GetDevice<Gamepad>().leftStick.up.ReadValue(), Direction.Forward, ThrusterBehavior.AddForce);
+            Test(InputSystem.GetDevice<Gamepad>().leftStick.down.ReadValue(), Direction.Forward, ThrusterBehavior.AddForce);
+            
+            Test(InputSystem.GetDevice<Gamepad>().rightStick.left.ReadValue(), Direction.Left, ThrusterBehavior.AddTorque);
+            Test(InputSystem.GetDevice<Gamepad>().rightStick.right.ReadValue(), Direction.Right, ThrusterBehavior.AddTorque);
+            Test(InputSystem.GetDevice<Gamepad>().rightStick.up.ReadValue(), Direction.Up, ThrusterBehavior.AddTorque);
+            Test(InputSystem.GetDevice<Gamepad>().rightStick.down.ReadValue(), Direction.Down, ThrusterBehavior.AddTorque);
+        }
+
+        private void Test(float input, Direction direction, ThrusterBehavior thrusterBehavior) => Thrusters.Where(x => x.Direction == direction && x.ThrusterBehavior == thrusterBehavior).ToList().ForEach(x => x.Execute(_rigidbody, input));
+        
+        private void Test(Vector2 input, Direction direction, ThrusterBehavior thrusterBehavior) => Thrusters.Where(x => x.Direction == direction && x.ThrusterBehavior == thrusterBehavior).ToList().ForEach(x => x.Execute(_rigidbody));
 
         private void SetVolume()
         {
